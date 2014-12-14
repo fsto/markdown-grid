@@ -483,6 +483,6 @@ class GridExtension(markdown.Extension):
         md.postprocessors.add('grid', postprocessor, '_end')
 
 
-def makeExtension(configs=None):
+def makeExtension(**configs):
     """Markdown extension initializer."""
     return GridExtension(configs=configs)
